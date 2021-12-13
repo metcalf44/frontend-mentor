@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: rgb(102, 226, 220);
+    --orange: rgb(250, 116, 83);
+    --Dark-yellow: rgb(255, 185, 100);
+    --off-white: rgb(252, 250, 249);
+    --lighter-black: rgb(25, 24, 38);
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+}
+/* desktop font-size: 1.25rem line-spacing: 2.125rem */
+/* tablet font-size: 1rem line-spacing: 1.625*/
+
+h1 {
+    font-size: 5.5rem;
+    border-spacing: -1px;
+    line-height: 5.5em
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.25em
+}
+
+/* buttons */
+.btn {
+    font-size: 1.125rem;
+    width: 20.8125rem;
+    height: 3.8125rem;
+}
+
+.ios-btn {
+    background: var(--lighter-black);
+    color: var(var(--off-white));
+}
+
+.ios-btn:hover {
+    background: var(--cyan)
+}
+
+.android-btn {
+    background: var(--off-white);
+    color: var(--lighter-black);
+}
+
+.android-btn:hover {
+    background: var(--Dark-yellow)
+}
