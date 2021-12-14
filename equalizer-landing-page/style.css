@@ -14,6 +14,10 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 /* desktop font-size: 1.25rem line-spacing: 2.125rem */
@@ -26,20 +30,86 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     font-size: 2.5rem;
-    line-height: 3.25em
+    line-height: 1.3em;
 }
 
+h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main {
+    background: var(--off-white);
+    width: 375px;
+}
+
+/* top section */
+.title {
+    padding: 2.5rem 1.5rem 0 1.5rem; 
+}
+
+.about-us {
+    padding: 4.125em 1.5em;
+}
+
+.about-us p {
+    margin: 1.5rem 0 0 0;
+}
+
+/* middle section */
+.black-background {
+    background: var(--lighter-black);
+    height: 600px;
+    border-radius: 12px;
+}
+.orange-background {
+    background: var(--orange);
+    color: var(--off-white);
+    padding: 3rem 2.25rem;
+    height: 546px;
+    border-radius: 12px;
+}
+
+.cost {
+    display: flex;
+    font-size: 4.06rem;
+    font-weight: 700;
+}
+
+.cost span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+/* bottom section */
+.bottom-section {
+    padding: 4rem 1.5rem;
+    line-height: 1.625rem;
+}
+
+.bottom-section span {
+    font-weight: 700;
+    display: block
+}
 /* buttons */
 .btn {
     font-size: 1.125rem;
-    width: 20.8125rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 auto;
+    width: 297px;
     height: 3.8125rem;
+    border-radius: 8px;
+    border: none;
 }
 
 .ios-btn {
     background: var(--lighter-black);
-    color: var(var(--off-white));
+    color: var(--off-white);
 }
 
 .ios-btn:hover {
