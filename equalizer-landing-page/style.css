@@ -43,36 +43,60 @@ h3 {
 .main {
     background: var(--off-white);
     width: 375px;
+    background: url(images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 20px -250px;
 }
 
 /* top section */
 .title {
-    padding: 2.5rem 1.5rem 0 1.5rem; 
+    padding-bottom: 4.125em; 
 }
 
 .about-us {
-    padding: 4.125em 1.5em;
-}
-
-.about-us p {
-    margin: 1.5rem 0 0 0;
+    height: 622px;
+    padding: 2.5em 1.5em 4.125em 1.5em;
 }
 
 /* middle section */
-.black-background {
-    background: var(--lighter-black);
-    height: 600px;
-    border-radius: 12px;
+/* .middle-section {
+    height: 949px;
+} */
+
+.middle-section .pattern {
+    position: absolute;
+    left: 3rem;
+    height: 420px;;
 }
-.orange-background {
+
+.black-background {
+    position: absolute;
+    top: 622px;
+    height: 600px;
+    width: 375px;
+    background-color: var(--lighter-black);
+    border-radius: ;
+}
+
+.main .orange-background {
+    position: absolute;
+    top: 1005px;
     background: var(--orange);
     color: var(--off-white);
     padding: 3rem 2.25rem;
     height: 546px;
+    width: 375px;
     border-radius: 12px;
 }
 
+.middle-section-text {
+    margin: 0;
+    padding: .75rem 0 2.25rem;
+}
+
 .cost {
+    margin: 0;
+    padding-left: .375rem;
     display: flex;
     font-size: 4.06rem;
     font-weight: 700;
@@ -85,31 +109,29 @@ h3 {
     align-items: center;
     margin-left: 1em;
 }
-/* bottom section */
-.bottom-section {
-    padding: 4rem 1.5rem;
-    line-height: 1.625rem;
-}
-
-.bottom-section span {
-    font-weight: 700;
-    display: block
-}
 /* buttons */
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.125rem;
     font-weight: 700;
     padding: 0;
-    margin: 0 auto;
     width: 297px;
     height: 3.8125rem;
-    border-radius: 8px;
+    border-radius: 15px;
     border: none;
 }
 
 .ios-btn {
+    margin-top: 2rem;
     background: var(--lighter-black);
     color: var(--off-white);
+    line-height: 2rem;
+}
+
+.ios-btn span{
+    padding-top: .3rem;
 }
 
 .ios-btn:hover {
@@ -117,10 +139,41 @@ h3 {
 }
 
 .android-btn {
+    margin: 1rem 0 3rem;
     background: var(--off-white);
     color: var(--lighter-black);
+    line-height: 2rem;
+}
+
+.ios-btn img, .android-btn img {
+    margin-right: .4875rem; 
 }
 
 .android-btn:hover {
     background: var(--Dark-yellow)
+}
+
+/* bottom section */
+.bottom-section {
+    position: absolute;
+    top: 1612px;
+    width: 375px;
+    line-height: 1.625rem;
+}
+
+.bottom-section span {
+    font-weight: 700;
+    display: block
+}
+
+.bottom-section p {
+    margin: 0;
+    padding: 2em 0 4em 0;
+}
+
+.icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
 }
