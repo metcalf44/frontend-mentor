@@ -63,19 +63,28 @@ h3 {
     height: 949px;
 } */
 
+
+.black-background {
+    position: absolute;
+    top: 620px;
+    height: 600px;
+    width: 375px;
+    background-color: var(--lighter-black);
+    border-radius: 12px;
+}
+
 .middle-section .pattern {
     position: absolute;
     left: 3rem;
     height: 420px;;
 }
 
-.black-background {
+.phone {
+    height: 430px;
     position: absolute;
-    top: 622px;
-    height: 600px;
-    width: 375px;
-    background-color: var(--lighter-black);
-    border-radius: ;
+    top: 522px;
+    left: 155px;
+    z-index: 1;
 }
 
 .main .orange-background {
