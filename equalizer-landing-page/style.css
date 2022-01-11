@@ -14,11 +14,8 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    width: 375px;
+    background: var(--off-white);
 }
 /* desktop font-size: 1.25rem line-spacing: 2.125rem */
 /* tablet font-size: 1rem line-spacing: 1.625*/
@@ -40,29 +37,39 @@ h3 {
     font-size: 2rem;
 }
 
-.main {
-    background: var(--off-white);
-    width: 375px;
-    background: url(images/bg-main-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 20px -250px;
-}
-
 /* top section */
 .title {
-    padding-bottom: 4.125em; 
+    position: absolute;
+    height: 32px;
+    width: 146.09px;
+    top: 39.99px;
+    left: 24.15px;
 }
 
 .about-us {
-    height: 622px;
-    padding: 2.5em 1.5em 4.125em 1.5em;
+    position: absolute;
+    width: 327px;
+    top: 138px;
+    left: 24px;
+}
+
+.mobile-background {
+    position: absolute;
+    width: 281.4px;
+    height: 480px;
+    top: -102px;
+    left: 159px;
+}
+
+.tablet-background {
+    display: none;
+}
+
+.pattern1 {
+    display: none;
 }
 
 /* middle section */
-/* .middle-section {
-    height: 949px;
-} */
-
 
 .black-background {
     position: absolute;
@@ -75,7 +82,8 @@ h3 {
 
 .middle-section .pattern {
     position: absolute;
-    left: 3rem;
+    width: 280px;
+    left: 48px;
     height: 420px;;
 }
 
@@ -83,18 +91,18 @@ h3 {
     height: 430px;
     position: absolute;
     top: 522px;
-    left: 155px;
+    left: 80.67px;
     z-index: 1;
 }
 
 .main .orange-background {
     position: absolute;
-    top: 1005px;
+    height: 546px;
+    width: 375px;
+    top: 1003px;
     background: var(--orange);
     color: var(--off-white);
     padding: 3rem 2.25rem;
-    height: 546px;
-    width: 375px;
     border-radius: 12px;
 }
 
@@ -182,8 +190,115 @@ h3 {
 }
 
 .icons {
+    position: absolute;
     width: 100px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
 }
+
+@media only screen and (min-device-width: 768px) {
+
+
+    body {
+        height: 1781px;
+        width: 768px;
+        font-size: 1.125rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* .main {
+        background: 
+        url("images/bg-main-tablet.png")
+        no-repeat;  
+    } */
+    /* top section */
+    .mobile-background {
+        display: none;
+    }
+
+    .tablet-background {
+        display: inline;
+        position: absolute;
+        width: 983px;
+        height: 808px;
+        top: -119px;
+        left: -254px;
+    }
+
+    .pattern1 {
+        display: inline;
+        position: absolute;
+        width: 266.67px;
+        height: 400px;
+        top: -32px;
+        left: 537px;
+    }
+
+    .about-us {
+       width: 520px;
+       height: 332px;
+       top: 189px;
+       left: 39px;
+    }
+
+    .about-us h2 {
+        font-size: 3.55rem;
+    }
+
+    .title {
+        top: 61.99px;
+        left: 39.15px;
+    }
+
+    .phone {
+        width: 270px;
+        height: 556px;
+        top: 632px;
+        left: 97px;
+    }
+
+
+    /* mid section */
+    .black-background {
+        width: 696px;
+        height: 600px;
+        top: 770px;
+        left: 33px;
+    }
+
+    .middle-section .pattern {
+        width: 280px;
+        left: 230px;
+        top: -40px;
+    }
+
+    .main .orange-background {
+        width: 399px;
+        top: 920px;
+        left: 272px;
+        z-index: 1;
+    }
+
+    /* bottom section */
+    .bottom-section {
+        width: 696px;
+        height: 143px;
+        top: 1553px;
+        left: 33px;  
+        padding: 0 0 5rem 0;
+    }
+
+    .bottom-section p {
+        width: 366px;
+        height: 79px;
+        top: 64px;
+    }
+    .bottom-section .icons {
+        width: 100px;
+        height: 100px;
+        top: 94px;
+        left: 596px;
+    }
+    }
