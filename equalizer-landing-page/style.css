@@ -86,6 +86,7 @@ h3 {
 .black-background {
     position: absolute;
     top: 620px;
+    left: 0;
     height: 600px;
     width: 375px;
     background-color: var(--lighter-black);
@@ -112,6 +113,7 @@ h3 {
     height: 546px;
     width: 375px;
     top: 1003px;
+    left: 0;
     background: var(--orange);
     color: var(--off-white);
     padding: 3rem 2.25rem;
@@ -365,8 +367,10 @@ h3 {
         }
 
         .phone {
-            top: 732px;
-            left: 302px;
+            top: 647px;
+            left: 267px;
+            width: 312px;
+            height: 642px;
         }
 
         .main .orange-background {
