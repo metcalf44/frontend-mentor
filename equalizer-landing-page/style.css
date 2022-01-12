@@ -16,6 +16,11 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 375px;
     background: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
 }
 /* desktop font-size: 1.25rem line-spacing: 2.125rem */
 /* tablet font-size: 1rem line-spacing: 1.625*/
@@ -36,6 +41,13 @@ h3 {
     margin: 0;
     font-size: 2rem;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* the above makes the middle section display wrong */
 
 /* top section */
 .title {
@@ -204,8 +216,7 @@ h3 {
         height: 1781px;
         width: 768px;
         font-size: 1.125rem;
-        margin: 0 auto;
-        padding: 0;
+        margin: 0;
     }
 
     /* .main {
@@ -301,4 +312,120 @@ h3 {
         top: 94px;
         left: 596px;
     }
+    }
+
+    @media only screen and (min-device-width: 1440px) {
+        /* top section */
+        body {
+            height: 1832px;
+            width: 1440px;
+        }
+
+        .pattern1 {
+            width: 312px;
+            height: 468px;
+            top: -40px;
+            left: 1128px;
+        }
+
+        .about-us {
+            left: 165px;
+        }
+        
+        .about-us h2 {
+            width: 1015px;
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -1;
+        }
+
+        .about-us p {
+            width: 825px;
+            font-size: 1.25rem;
+            line-height: 1.75em;
+        }
+
+        .title {
+            left: 166.15px;
+        }
+        /* mid section */
+
+        .black-background {
+            width: 1110px;
+            height: 600px;
+            top: 860px;
+            left: 165px;
+        }
+
+        .middle-section .pattern {
+             position: absolute;
+            width: 312px;
+            height: 468px;
+            left: 330px;
+        }
+
+        .phone {
+            top: 732px;
+            left: 302px;
+        }
+
+        .main .orange-background {
+            width: 446px;
+            height: 625px;
+            top: 950px;
+            left: 734px;
+            font-size: 1.25rem;
+            padding: 3.375rem;
+        }
+
+        .orange-background h3 {
+            font-size: 2.5rem;
+        }
+
+        .middle-section-text {
+            width: 333px;
+            font-size: 1.25rem;
+            line-height: 2.125rem;
+        }
+
+        .btn {
+            width: 333px;
+        }
+
+        .ios-btn {
+            margin: 1.93rem 0;
+        }
+
+        /* bottom section */
+        .bottom-section {
+            width: 1110px;
+            /* top: 1662px;
+            left: 165px;
+            font-size: 1rem; */
+        }
+
+        .equalizer-logo {
+            position: absolute;
+            width: 146.09px;
+            height: 32px;
+            top: 100px;
+            left: 135px;
+        }
+        .test-text {
+            position: absolute;
+            width: 366px;
+            left: 400px;
+            height: 79px;
+            font-size: 1rem;
+        }
+
+        .test-text span {
+            display: inline-block
+        }
+
+        .bottom-section .icons {
+            width: 100px;
+            left: 1140px;
+            top: 125px;
+        }
     }
