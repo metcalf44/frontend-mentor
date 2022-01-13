@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: rgb(84,230,175);
+    --dark-purple: rgb(44,52,75);
+    --lighter-black: rgb(18,23,37);
+    --white: rgb(255,255,255);
+    --light-purple: rgb(90,102,138);
+    --purple-white: rgb(194,203,229);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
