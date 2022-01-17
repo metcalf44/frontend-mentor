@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    margin-top: 0;
+    outline: 1px solid red;
 }
 
 :root {
@@ -14,7 +16,6 @@
 }
 
 body {
-    background: var(--lighter-black);
     font-family: 'chivo', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -24,10 +25,13 @@ body {
     margin: 0;
 }
 
-.main {
-    background: var(--lighter-black);
-    color: var(--white);
+.container {
     position: relative;
     width: 23.43rem;
     height: 41.68rem; 
+    background-color: rgba(0,0,0,0.8);
+    background-image: url(assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
