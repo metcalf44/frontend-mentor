@@ -23,6 +23,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    /* background: var(--lighter-black) */
 }
 
 .container {
@@ -34,4 +35,83 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    color: var(--white)
 }
+
+.title-image {
+    position: absolute;
+    width: 8.428rem;
+    height: 3.5rem;
+    top: 3.875rem;
+    left: 7.5rem;
+    line-height: 2.37rem;
+}
+
+.hero-text {
+    position: absolute;
+    width: 20.43rem;
+    height: 24.85rem;
+    top: 10.93rem;
+    left: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 1.625rem;
+    color: var(--light-green);
+    text-transform: uppercase;
+    line-height: 2.25rem;
+}
+
+.hero span {
+    color: var(--white);
+    font-weight: 400;
+}
+
+p {
+    text-align: justify;
+    font-weight: 400;
+    color: var(--purple-white);
+    font-size: 0.93rem;
+    line-height: 1.56rem;
+  
+}
+
+.podcasts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 19.68rem;
+    height: 1.06rem;
+    top: 25rem;
+    left: 1.875rem;
+    color: var(--purple-white)
+}
+
+.spotify-apple {
+    display: flex;
+    justify-content: space-between;
+    width: 7.75rem;
+    height: 1.06rem;
+}
+
+.spotify-logo {
+    width: 3.5rem;
+    height: 1.06rem;
+}
+
+.apple-logo {
+    width: 2.81rem;
+    height: 1.06rem;
+}
+
+.google-logo {
+    width: 4.56rem;
+    height: 0.68rem;
+}
+
+.pocket-logo {
+    width: 4.81rem;
+    height: 0.93rem;
+}
+
