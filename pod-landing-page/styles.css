@@ -115,3 +115,31 @@ p {
     height: 0.93rem;
 }
 
+.btn {
+    font-size: .87rem;
+    width: 20.43rem;
+    height: 2.87rem;
+    left: 1.56rem;
+    border-radius: 28px;
+    line-height: 1.75rem;
+}
+
+.address {
+    position: absolute;
+    background: var(--dark-purple);
+    color: rgba(255,255,255,.5);
+    padding-left: 2rem;
+    top: 29.06rem;
+}
+
+::placeholder {
+    color: rgba(255,255,255,.5);
+    font-size: .87rem;
+}
+
+.submit-btn {
+    background: var(--light-green);
+    color: var(--lighter-black);
+    position: absolute;
+    top: 32.93rem;
+}
