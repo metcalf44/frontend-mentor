@@ -96,13 +96,6 @@ p {
     color: var(--purple-white)
 }
 
-.spotify-apple {
-    display: flex;
-    justify-content: space-between;
-    width: 7.75rem;
-    height: 1.06rem;
-}
-
 .spotify-logo {
     width: 3.5rem;
     height: 1.06rem;
@@ -146,9 +139,9 @@ p {
 }
 
 .submit-btn {
+    position: absolute;
     background: var(--light-green);
     color: var(--lighter-black);
-    position: absolute;
     top: 32.93rem;
 }
 
@@ -177,12 +170,100 @@ p {
         left: 2.43rem;
     }
 
+    .hero {
+        background-color: var(--lighter-black);
+        position: absolute;
+        width: 39.68rem;
+        height: 31.81rem;
+        top: 16.12rem;
+        left: 2.43rem;
+    }
+
+    .hero-text {
+        position: absolute;
+        height: 26rem;
+        top: 5.81rem;
+        left: 0;
+        width: inherit;
+    }
+    
+    .hero-text h1{
+       font-size: 3rem;
+       left: 0px;
+       font-size: 3rem; 
+       line-height: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        width: 27.81rem;
+        text-align: left;
+    }
+
+    .btn-container {
+        width: 26.68rem;
+        top: 38.63rem;
+        left: 2.43rem;
+        height: 3.5rem;
+        margin: 0;
+        position: absolute;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+    .address {
+        width: 26.68rem;
+        height: 3.5rem;
+        top: 0;
+    }
+
+    .submit-btn {
+        width: 10.12rem;
+        height: 2.87rem;
+        top: 5px;
+        left: 16.25rem
+    }
+
+    .podcasts {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 33.5rem;
+        height: 1.81rem;
+        top: 46.12rem;
+        left: 2.43rem;
+    }
+
+    .spotify-logo {
+        width: 6rem;
+        height: 1.81rem;
+    }
+
+    .apple-logo {
+        width: 4.87rem;
+        height: 1.81rem;
+    }
+
+    .google-logo {
+        width: 7.81rem;
+        height: 1.125rem;
+    }
+
+    .pocket-logo {
+        width: 8.06rem;
+        height: 1.62rem;
+    }
+
     .dot-image {
         display: inline;
         position: absolute;
         top: 920px;
         left: 30px;
     }
+
 
 
 }
