@@ -13,6 +13,7 @@
     --white: rgb(255,255,255);
     --light-purple: rgb(90,102,138);
     --purple-white: rgb(194,203,229);
+    --focus-btn: #b3ffe2
 }
 
 body {
@@ -143,6 +144,19 @@ p {
     background: var(--light-green);
     color: var(--lighter-black);
     top: 32.93rem;
+    cursor: pointer;
+}
+
+.submit-btn:focus {
+    background: var(--focus-btn)
+}
+
+.error-msg {
+    color: red;
+    font-size: .75rem;
+    position: absolute;
+    top: 36rem;
+    left: 3rem;
 }
 
 @media only screen and (min-width: 768px){
@@ -227,6 +241,11 @@ p {
         left: 16.25rem
     }
 
+    .error-msg {
+        top: 4rem;
+        left: 2.2rem;
+    }
+
     .podcasts {
         position: absolute;
         display: flex;
@@ -263,7 +282,46 @@ p {
         top: 920px;
         left: 30px;
     }
+}
 
+@media only screen and (min-width: 1440px) {
+   .container {
+        width: 90rem;
+        height: 56.25rem;
+   }
 
+   .background-image {
+       width: 55.5rem;
+       height: 40rem;
+       top: 8.12rem;
+       left: 34.5rem;
+       background-image: url(assets/desktop/image-host.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-blend-mode: multiply;
+   }
 
+   .title-image {
+       top: 6.37rem;
+       left: 10.31rem;
+   }
+
+   .hero {
+       width: 45.18rem;
+       top: 16.31rem;
+       left: 10.31rem; 
+   }
+
+   .btn-container {
+       left: 10.31rem;
+   }
+
+   .podcasts {
+       left: 10.31rem;
+   }
+
+   .dot-image {
+       top: 44.87rem;
+       left: 75.5rem;
+   }
 }
