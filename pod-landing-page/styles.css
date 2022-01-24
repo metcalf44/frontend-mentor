@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin-top: 0;
-    outline: 1px solid red;
 }
 
 :root {
@@ -24,6 +23,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    font-weight: 300;
 }
 
 .container {
@@ -74,7 +74,6 @@ body {
 
 .hero span {
     color: var(--white);
-    font-weight: 400;
 }
 
 p {
@@ -132,6 +131,7 @@ p {
     color: rgba(255,255,255,.5);
     padding-left: 2rem;
     top: 29.06rem;
+    border: none;
 }
 
 ::placeholder {
@@ -145,6 +145,11 @@ p {
     color: var(--lighter-black);
     top: 32.93rem;
     cursor: pointer;
+    border: none;
+}
+
+.submit-btn:hover {
+    background: var(--focus-btn)
 }
 
 .submit-btn:focus {
