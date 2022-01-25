@@ -93,7 +93,7 @@ p {
     height: 1.06rem;
     top: 25rem;
     left: 1.875rem;
-    color: var(--purple-white)
+    color: var(--light-purple)
 }
 
 .spotify-logo {
@@ -209,8 +209,8 @@ p {
     .hero-text h1{
        font-size: 3rem;
        left: 0px;
-       font-size: 3rem; 
-       line-height: 3.5rem;
+       font-size: 3.25rem; 
+       line-height: 3.875rem;
     }
 
     .hero p {
