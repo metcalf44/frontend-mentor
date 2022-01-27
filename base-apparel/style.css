@@ -3,7 +3,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-    /* outline: 1px solid red; */
 }
 
 :root {
@@ -132,11 +131,93 @@ p {
     margin: 0.615em 0 0 4.307em;
 }
 
-.test-img {
+.error-icon {
     margin-left: -98px;
 }
 
 .form {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /* typography */
+
+    .container {
+        width: 1440px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: 17.32px;
+        text-align: left;
+    }
+
+    h1 span {
+        line-height: 4.43rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .email {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .error-msg {
+        line-height: 2.153rem;
+    }
+
+    /* design */
+
+    .logo {
+        width: 9.875rem;
+        height: 2.0625rem;
+        margin-top: 4.25rem;
+        margin-left: 10.31rem;
+        float: left;
+    }
+
+    .image {
+        content: url(images/hero-desktop.jpg);
+        width: 38.125rem;
+        height: 50rem;
+        float: right;
+    }
+    
+    .hero {
+        width: 27.81rem;
+        margin-top: 14.875rem;
+        margin-left: 10.312rem;
+    }
+
+    .email {
+        width: 27.8125rem;
+        padding: 0.937em 0 0.8125em 2em
+    }
+
+    .image-btn {
+        width: 6.25rem;
+        /* height: 3.5rem; */
+        margin-left: -100px;
+        /* padding: 1.187rem 2.822rem 1.208rem 2.875rem */
+        padding: 0;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .error-icon {
+        margin-left: -140px;
+    }
+
+    .error-msg {
+        margin: .307rem 0 0 12.31rem;
+    }
+
 }
