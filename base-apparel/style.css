@@ -3,7 +3,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 :root {
@@ -57,10 +57,14 @@ p {
     font-weight: 400;
 }
 
+.error-msg {
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+}
+
 /* design */
 
 .container {
-    position: absolute;
     width: 23.43rem;
     height: 50rem;
     background-image: linear-gradient(153deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
@@ -69,7 +73,7 @@ p {
 .logo {
     width: 6.25rem;
     height: 1.305rem;
-    margin: 1.937rem 0 2rem 2rem 
+    margin: 1.937rem 0 2.131rem 2rem 
 }
 
 .image {
@@ -79,11 +83,18 @@ p {
 }
 
 .hero {
-    margin: 0 2rem 5.75rem 2rem;
+    position: relative;
+    margin: 0 2rem;
 }
 
 h1 {
     margin-bottom: 0.35em;
+    color: var(--light-red);
+}
+
+h1 span {
+    color: var(--Grayish-red);
+    font-weight: 600;
 }
 
 p {
@@ -93,13 +104,39 @@ p {
 
 .email {
     width: 22.214em;
-    padding: 0.7857em 1.714em;
+    padding: 0.6875rem 0 0.5625rem 1.5rem;
     background: transparent;
     color: var(--white);
+    opacity: 0.5;
     border-radius: 28px;
     border: 1px var(--light-red) solid;
 }
 
 ::placeholder {
     color: var(--light-red);
+}
+
+.image-btn {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 28px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    padding: 0.937rem 1.697rem 0.958rem 1.75rem;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    margin-left: -65px;
+}
+
+.error-msg {
+    width: 12.692em;
+    color: var(--soft-red);
+    margin: 0.615em 0 0 4.307em;
+}
+
+.test-img {
+    margin-left: -98px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
 }
