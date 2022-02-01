@@ -104,8 +104,7 @@ p {
     width: 22.214em;
     padding: 0.6875rem 0 0.5625rem 1.5rem;
     background: transparent;
-    color: var(--white);
-    opacity: 0.5;
+    color: var(--Grayish-red);
     border-radius: 28px;
     border: 1px var(--light-red) solid;
 }
@@ -114,14 +113,19 @@ p {
     color: var(--light-red);
 }
 
-.image-btn {
+.test {
     width: 4rem;
     height: 3rem;
-    border-radius: 28px;
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
     padding: 0.937rem 1.697rem 0.958rem 1.75rem;
-    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
     margin-left: -65px;
+    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    color: var(--Grayish-red);
+    opacity: 0.5;
+    border-radius: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
 }
 
 .error-msg {
@@ -198,17 +202,7 @@ p {
 
     .email {
         width: 27.8125rem;
-        padding: 0.937em 0 0.8125em 2em
-    }
-
-    .image-btn {
-        width: 6.25rem;
-        /* height: 3.5rem; */
-        margin-left: -100px;
-        /* padding: 1.187rem 2.822rem 1.208rem 2.875rem */
-        padding: 0;
-        opacity: 0.5;
-        cursor: pointer;
+        padding: 0.937em 0 0.8125em 2em;
     }
 
     .error-icon {
@@ -219,4 +213,10 @@ p {
         margin: .307rem 0 0 12.31rem;
     }
 
+    .test {
+        width: 100px;
+        height: 56px; 
+        margin-left: -100px;
+        cursor: pointer;
+    }
 }
