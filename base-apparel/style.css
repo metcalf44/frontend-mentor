@@ -126,7 +126,6 @@ p {
         background-position: center;
         border: none;
     color: var(--grayish-red);
-    opacity: 0.5;
     border-radius: 28px;
     box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
 }
@@ -154,6 +153,8 @@ p {
 
     .container {
         width: 1440px;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
     }
 
     h1 {
@@ -195,7 +196,7 @@ p {
     .image {
         content: url(images/hero-desktop.jpg);
         width: 38.125rem;
-        height: 50rem;
+        height: 100%;
         float: right;
     }
     
@@ -223,7 +224,6 @@ p {
         height: 58px; 
         margin-left: -100px;
         cursor: pointer;
-        opacity: .25;
     }
 
     .submit-btn:hover {
